@@ -1,0 +1,78 @@
+<!--Selrect Room -->
+<ion-header mode="ios">
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+    </ion-buttons>
+  <ion-title>Select Room</ion-title>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content color="tertiary">
+      <div class="ion-no-margin">
+        <ion-card color="tertiary" class="ion-no-padding border-radius">
+            <ion-card mode="ios">
+              <img src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/161159671.jpg?k=303338a6b1b5474e670d5b6cd98ae38bc44ad3576d9743cc516964f1aee5a679&o=&hp=1" />
+              <ion-card-header color="tertiary">
+                <ion-card-title>Rimtalay Resort Koh Larn</ion-card-title>
+                <ion-label></ion-label>
+              </ion-card-header>
+            </ion-card>
+            <ion-item color="tertiary">
+              <ion-label>ห้องพัก</ion-label>
+              
+              <!--โชว์ข้อมูล-->
+              <ion-select value="" interface="action-sheet">
+                <ion-select-option value="Standard Queen Room">Standard Queen Room</ion-select-option>
+                <ion-select-option value="Superior Queen Room">Superior Queen Room</ion-select-option>
+                <ion-select-option value="Blue Ocean Villa">Blue Ocean Villa</ion-select-option>
+                <ion-select-option value="Blue Ocean">Blue Ocean</ion-select-option>
+                <ion-select-option value="Green Ocean">Green Ocean</ion-select-option>
+              </ion-select>
+
+
+            </ion-item>
+            <ion-item color="tertiary">
+              <ion-label>ห้องพัก Standard Queen Room <br>
+              <ion-icon name="bed-outline"></ion-icon>  1 เตียงควีนไซส์ <br>
+              <ion-icon name="wifi-outline"></ion-icon> ฟรี Wi-Fi <br>
+              <ion-icon name="fast-food-outline"></ion-icon>  ฟรีอาหารเช้า <br>
+              <ion-icon name="fast-food-outline"></ion-icon>  ยกเลิกการจองได้ฟรี <br>
+            ราคา 2,436 บาท</ion-label>
+            </ion-item>
+            <ion-item color="tertiary">
+              <ion-label>ใส่ Code ส่วนลด</ion-label>
+              <ion-input placeholder="Code ส่วนลด"></ion-input>
+            </ion-item>
+            <ion-slides>
+              <ion-slide>
+                <div class="slide">
+                <ion-slide>
+                  <img src="https://q-xx.bstatic.com/xdata/images/hotel/840x460/161560897.jpg?k=7eadb08f64e0d2954bf19205ea56d2295ae3b578df16f8d1d133ac1c3103a771&o=" />
+                </ion-slide>
+                </div>
+              </ion-slide>
+              <ion-slide>
+              <ion-slide>
+                <img src="https://q-xx.bstatic.com/xdata/images/hotel/840x460/254757500.jpg?k=bb578979af0504039ad0f9128ae638fa15cfe603ba8433455bf2838b6fb56c83&o=" />
+              </ion-slide>
+              </ion-slide>
+              <ion-slide>
+              <ion-slide>
+                <img src="https://q-xx.bstatic.com/xdata/images/hotel/840x460/161157933.jpg?k=783968aa8c11cc3b929f05565caaa5d7c8222240e8f2ec95786388667d3ec6e9&o=" />
+              </ion-slide>
+              </ion-slide>
+              <ion-slide>
+                <img src="https://q-xx.bstatic.com/xdata/images/hotel/840x460/161160701.jpg?k=f3e9e1ca2be94cf213f12a4b21ae82a4ece902f3f0fd05632cde4877a801c6e1&o=" />
+              </ion-slide>
+            </ion-slides>  
+            <br>
+          <ion-button color="danger" class="ion-no-margin" expand="full" routerLink="/hotel-booking-form">เลือก</ion-button>
+
+        </ion-card>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

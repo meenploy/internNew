@@ -1,0 +1,100 @@
+<ion-header mode="ios">
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Select Flight (Outbound)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <ion-card>
+      <ion-card-content color="tertiary">
+        <div class="ion-no-margin">
+          <ion-card color="tertiary" class="ion-no-padding border-radius">
+            <ion-row>
+              <ion-col>
+                <ion-select
+                  okText="ตกลง"
+                  cancelText="ยกเลิก"
+                  interface="action-sheet"
+                  placeholder="สายการบิน"
+                  mode="ios"
+                >
+                  <ion-select-option value="air">AIR ASIA</ion-select-option>
+                  <ion-select-option value="nok">NOK AIR</ion-select-option>
+                  <ion-select-option value="tla">THAI LION AIR</ion-select-option>
+                  <ion-select-option value="tsm">THAI SMILE</ion-select-option>
+                </ion-select>
+              </ion-col>
+              <ion-col>
+                <ion-select
+                  okText="ตกลง"
+                  cancelText="ยกเลิก"
+                  interface="action-sheet"
+                  placeholder="เวลาออก"
+                  mode="ios"
+                >
+                  <ion-select-option value="first"
+                    >เที่ยวบินแรก (00.00 - 06.00)</ion-select-option
+                  >
+                  <ion-select-option value="morning"
+                    >เที่ยวบินตอนเช้า (06.00 - 12.00)</ion-select-option
+                  >
+                  <ion-select-option value="noon"
+                    >เที่ยวบินช่วงบ่าย (12.00 - 18.00)</ion-select-option
+                  >
+                  <ion-select-option value="night"
+                    >เที่ยวบินกลางคืน (18.00 - 00.00)</ion-select-option
+                  >
+                </ion-select>
+              </ion-col>
+              <ion-col>
+                <ion-select
+                  okText="ตกลง"
+                  cancelText="ยกเลิก"
+                  interface="action-sheet"
+                  placeholder="ประเภท"
+                  mode="ios"
+                >
+                  <ion-select-option value="min">ราคาถูกที่สุด</ion-select-option>
+                  <ion-select-option value="mid">คุ้มราคา</ion-select-option>
+                  <ion-select-option value="max">ราคาสูงที่สุด</ion-select-option>
+                  <ion-select-option value="out"
+                    >เวลาออกเดินทาง</ion-select-option
+                  >
+                  <ion-select-option value="to">เวลาถึง</ion-select-option>
+                </ion-select>
+              </ion-col>
+            </ion-row>
+              <ion-list-header lines="none" mode="md" color="tertiary">
+                <ion-label>เลือกรายการ</ion-label>
+              </ion-list-header>
+              <ion-item
+                button
+                class="ion-margin-bottom"
+                color="tertiary"
+                *ngFor="let ticket of tickets"
+                routerLink="/air-oneway-payment"
+              >
+                <ion-avatar slot="start">
+                  <ion-img [src]="ticket.img"></ion-img>
+                </ion-avatar>
+                <ion-label>
+                  <b> {{ ticket.go }} > {{ ticket.to }} </b>
+                  <ion-text color="medium">
+                    <h3>
+                      {{ ticket.gtime }}>{{ ticket.ttime }} {{ ticket.time }}
+                    </h3>
+                  </ion-text>
+                </ion-label>
+                <ion-label slot="end" color="danger">
+                  <ion-text> {{ ticket.price }} </ion-text>
+                </ion-label>
+              </ion-item>
+          </ion-card>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>

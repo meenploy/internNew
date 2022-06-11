@@ -1,0 +1,63 @@
+<!--Hotel Booking-->
+<ion-header mode="ios">
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Hotel Booking Form</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content mode="md">
+  <ion-card >
+    <ion-card-content color="tertiary">
+      <div class="ion-no-margin">
+        <ion-card color="tertiary" class="ion-no-padding border-radius">
+            <ion-item color="tertiary"><ion-card-title>
+              <b>กรอกข้อมูลผู้เข้าพัก</b>
+            </ion-card-title>
+          </ion-item>
+            <ion-item color="tertiary">
+              <ion-label>ชื่อ (ภาษาอังกฤษ)*</ion-label>
+              <ion-input placeholder="surname"></ion-input>
+            </ion-item>
+            <ion-item color="tertiary">
+              <ion-label>นามสกุล (ภาษาอังกฤษ)*</ion-label>
+              <ion-input placeholder="lastname"></ion-input>
+            </ion-item>
+            <ion-item color="tertiary">
+              <ion-label>เบอร์โทรติดต่อ*</ion-label>
+              <ion-input placeholder="Tel"></ion-input>
+            </ion-item>
+            <ion-item color="tertiary">
+              <ion-label>อีเมล*</ion-label>
+              <ion-input placeholder="Email"></ion-input>
+            </ion-item>
+            <ion-item color="tertiary">
+              <ion-label>ยืนยันอีเมล*</ion-label>
+              <ion-input placeholder="Email"></ion-input>
+            </ion-item>
+             <ion-item color="tertiary"><ion-card-title color="tertiary">ตัวเลือกอื่นๆ สำหรับเพิ่มลงในการจอง</ion-card-title></ion-item >
+            <ion-item color="tertiary">
+              <ion-label>ฉันสนใจเช่ารถยนต์</ion-label>
+              <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+            </ion-item>
+            <ion-item color="tertiary">
+              <ion-label>ฉันสนใจเช่ารถจักยานยนต์</ion-label>
+              <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+            </ion-item >
+            <ion-item color="tertiary">
+              <ion-card-title >เวลาที่ท่านจะเดินทางถึง</ion-card-title></ion-item >
+            <ion-item color="tertiary">
+              <ion-label>ระบุเวลาที่คาดว่าจะเดินทางถึง</ion-label>
+              <ion-input placeholder="(ไม่บังคับ)"></ion-input>
+            </ion-item>
+            
+            <br>
+          <ion-button color="danger" class="ion-no-margin" expand="full" routerLink="/cart-edit">เลือก</ion-button>
+        </ion-card>
+        
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

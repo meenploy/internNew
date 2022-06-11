@@ -1,0 +1,91 @@
+<ion-header class="header" mode="ios">
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="text-light ion-padding-center">Touring Detail </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content color="tertiary">
+      <div class="ion-no-margin">
+        <ion-card color="tertiary" class="ion-no-padding border-radius">
+          <ion-list
+            lines="full"
+            class="ion-no-padding"
+            *ngFor="let tmp of pagkage"
+          >
+            <ion-card color="tertiary">
+
+            <ion-card-header mode="md"><ion-card-title>{{tmp.englishname}}</ion-card-title><ion-card-subtitle>250 บาท</ion-card-subtitle></ion-card-header>
+            
+              
+              <ion-slides>
+                <ion-slide>
+                  <div class="slide">
+                    <img
+                      src="https://itp1.itopfile.com/ImageServer/itp_17012020ybvl/803/0/RailayBay-1200x8000038img-6z-z429956806395.jpg"
+                    />
+                  </div>
+                </ion-slide>
+
+                <ion-slide>
+                  <img
+                    src="https://itp1.itopfile.com/ImageServer/itp_17012020ybvl/0/0/RailayBay-1200x8000013Deluxecottage-1z-z521229803942.jpg"
+                  />
+                </ion-slide>
+
+                <ion-slide>
+                  <img
+                    src="https://itp1.itopfile.com/ImageServer/itp_17012020ybvl/0/0/RailayBay-1200x8000044img-1(2)z-z963804355974.jpg"
+                  />
+                </ion-slide>
+
+                <ion-slide>
+                  <img
+                    src="https://itp1.itopfile.com/ImageServer/itp_17012020ybvl/0/0/3RailayBay-1200x800z-z1401813691806.jpg"
+                  />
+                </ion-slide>
+              </ion-slides>
+              <ion-card-header mode="md">
+                <ion-card-subtitle>{{tmp.thainame}}</ion-card-subtitle>
+                <ion-card-title>รายละเอียดงานบริการ</ion-card-title>
+              </ion-card-header>
+              <ion-card-content> {{tmp.detail}} </ion-card-content>
+              <ion-card-header>
+                <h2>หมายเหตุ การใช้งานแพ็คเกจ</h2>
+              </ion-card-header>
+              <ion-card-content>
+                - ท่านสามารถเลือกวันเข้าพักได้ทุกวัน<br />- โปรโมชั่น 3 วัน 2
+                คืน สำหรับจอง 2 ท่าน ขึ้นไป<br />- เลือกจองเข้าพักได้ วันที่ 1
+                พ.ค. ถึง 31 ต.ค. 65 ชำระท่านละ 2,590 บ.<br />- สำหรับ เด็กอายุ 4
+                - 11 ปี เสริมเตียง ชำระท่านละ 2,590 บ.<br />- สำหรับ เด็กอายุ 4
+                - 11 ปี พักกับผู้ปกครอง ชำระท่านละ 490 บ.<br />- สำหรับ เด็กอายุ
+                0 - 3 ปี ไม่เสียค่าใช้จ่าย<br />- โปรโมชั่น แพ็คเกจนี้
+                สงวนสิทธิ์สำหรับผู้ซื้อและระบุวันเดินทางภายใน 30 มิ.ย. 65
+                เท่านั้น<br />- กรณี ไม่สามารถระบุวันเดินทางภายในวันที่กำหนด
+                สามารถปรับเปลี่ยนเป็นแพ็คเกจอื่นได้ฟรี <br />-
+                หากต้องการแพ็คเกจเดิม
+                ราคาแพ็คเกจอาจมีการเปลี่ยนแปลงตามแพ็คเกจโปรโมชั่น ณ ขณะนั้น<br />-
+                VOUCHER ไม่สามารถเปลี่ยนแปลงเป็นเงินสดได้<br />-
+                ติดต่อเพื่อเช็คห้องว่างล่วงหน้า 14 - 21 วัน<br />- อายุการใช้งาน
+                โปรโมชั่น แพ็คเกจ : 31 ต.ค. 2565<br />
+              </ion-card-content>
+            </ion-card>
+          </ion-list>
+
+          <br />
+          <ion-button
+            color="danger"
+            class="ion-no-margin"
+            expand="full"
+            routerLink="/tour-form"
+            >เลือก</ion-button
+          >
+        </ion-card>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
